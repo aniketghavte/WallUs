@@ -29,6 +29,7 @@ const Feed = () => {
     }
   }, [categoryId])
   
+  if(!Pins?.length) return <h2>No pins Available</h2>
 
   if(Loading) return <Spinner message="We are adding new ideas to your feed! "/>
   return (
